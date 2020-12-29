@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="../dist/index.js" ></script>
+</head>
+<body>
+  <div id="add">
+    <div>{{test}}</div>
+    <test-component></test-component>
+  </div>
+  <script>
+    Vue.createApp({
+      setup(){
+        return {
+          test:'IMMOC'
+        }
+      }
+    }).use(datavLibs).mount('#add')
+  </script>
+</body>
+</html>
