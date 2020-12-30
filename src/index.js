@@ -1,15 +1,19 @@
-import Test from './components/Test/index'
-import Test2 from './components/Test2/index'
+
+
 import SimpleSvgTest from './components/SimpleSvg/index'
 import _Icon from './components/Icon/index'
+import _SvgTransform from './components/SvgTransform/index'
+import SmlSvg from './components/SmlSvg/index'
+import Loading from './components/Loading/index'
+import FlyBox from './components/FlyBox/index'
 //!这个函数也是vue插件 这个插件里面调用另外两个插件 同时注册两个组件
 
-export let TestComponent = Test
-export let SimpleTest = Test2
-export let SimpleSvg = SimpleSvgTest
-export let Icon = _Icon
-export default function index(vue){
-  vue.use(Test)
-  vue.use(SimpleTest)
 
-}
+ export default function index(vue){
+  vue.use(SimpleSvgTest)
+  vue.use(_Icon)
+  vue.use(_SvgTransform)
+  vue.use(SmlSvg)
+  vue.use(Loading)
+  vue.use(FlyBox)
+} 
