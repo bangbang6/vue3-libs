@@ -465,86 +465,12 @@ function Loading (Vue) {
   Vue.component(script$4.name, script$4);
 }
 
-var script$5 = {
-  name: 'FlyBox'
-};
-
-var _hoisted_1$4 = {
-  width: "400",
-  height: "400"
-};
-
-var _hoisted_2$4 = /*#__PURE__*/createVNode("defs", null, [/*#__PURE__*/createVNode("mask", {
-  id: "mask"
-}, [/*#__PURE__*/createVNode("radialGradient", {
-  fx: "100%",
-  fy: "50%",
-  cx: "50%",
-  cy: "50%",
-  r: "50%",
-  id: "radial"
-}, [/*#__PURE__*/createVNode("stop", {
-  offset: "0%",
-  "stop-color": "#fff",
-  "stop-opacity": "1"
-}), /*#__PURE__*/createVNode("stop", {
-  offset: "100%",
-  "stop-color": "#fff",
-  "stop-opacity": "0"
-})]), /*#__PURE__*/createVNode("circle", {
-  cx: "0",
-  cy: "0",
-  r: "200",
-  fill: "url(#radial)"
-}, [/*#__PURE__*/createVNode("animateMotion", {
-  dur: "3s",
-  path: "M 5 5 L 395 5 L 395 395 L 5 395 Z",
-  repeatCount: "indefinite",
-  rotate: "0"
-})])])], -1
-/* HOISTED */
-);
-
-var _hoisted_3$2 = /*#__PURE__*/createVNode("path", {
-  d: "M 5 5 L 395 5 L 395 395 L 5 395 Z",
-  stroke: "#235fa7",
-  "stroke-width": "1",
-  fill: "white"
-}, null, -1
-/* HOISTED */
-);
-
-var _hoisted_4 = /*#__PURE__*/createVNode("path", {
-  d: "M 5 5 L 395 5 L 395 395 L 5 395 Z",
-  stroke: "#4fd2dd",
-  "stroke-width": "3",
-  mask: "url(#mask)",
-  fill: "white"
-}, null, -1
-/* HOISTED */
-);
-
-function render$5(_ctx, _cache, $props, $setup, $data, $options) {
-  return openBlock(), createBlock("svg", _hoisted_1$4, [_hoisted_2$4, _hoisted_3$2, _hoisted_4]);
-}
-
-var css_248z$5 = "\r\n";
-styleInject(css_248z$5);
-
-script$5.render = render$5;
-script$5.__file = "src/components/FlyBox/index.vue";
-
-function FlyBox (Vue) {
-  Vue.component(script$5.name, script$5);
-}
-
 function index$1(vue) {
   vue.use(SimpleSvgTest);
   vue.use(_Icon);
   vue.use(_SvgTransform);
   vue.use(index);
   vue.use(Loading);
-  vue.use(FlyBox);
 }
 
 export default index$1;
